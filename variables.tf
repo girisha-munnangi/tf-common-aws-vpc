@@ -26,3 +26,11 @@ variable "public_subnet_tags" {
     default = {}
     type = map
 }
+variable "private_subnet_cidrs" {
+    type = list
+    default = ["10.0.11.0/24", "10.0.12.0/24"]
+}
+variable "private_subnet_tags" {
+    default = {}
+    type = map
+}
